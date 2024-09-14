@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1d1d1d;
+}
+
+/* Logo styles */
+header .logo img {
+    max-width: 100%;   /* Ensures the logo scales down proportionally */
+    height: auto;      /* Maintains aspect ratio */
+    max-height: 50px;  /* You can set a max height to control its size */
+    width: auto;       /* Automatically adjusts width based on height */
+}
+
+@media (max-width: 70px) {
+    /* Adjust the logo size for smaller screens */
+    header .logo img {
+        max-height: 40px;  /* Smaller logo on smaller screens */
+    }
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Align navigation links to the right */
+header nav {
+    margin-left: auto; /* Pushes the nav links to the right */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+header nav ul li a:hover {
+    color: #b19cd9; /* Change text color to purple on hover */
+}
+
+/* Underline Hover Effect */
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #b19cd9; /* Purple underline */
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.cta {
+    background-color: #b19cd9;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #282828;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.service {
+    max-width: 30%;
+}
+
+.service h3 {
+    font-size: 24px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+    background-color: #282828;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    max-width: 30%;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #b19cd9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Container for centering */
+.contact-me-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Optional: Adds space above the link */
+}
+
+/* Link styles */
+.contact-me-container a {
+    text-decoration: none;
+    color: #b19cd9; /* Default link color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+}
+
+/* Hover Effect */
+.contact-me-container a:hover {
+    color: #ffffff; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Optional: Active effect when the link is clicked */
+.contact-me-container a:active {
+    transform: scale(0.9); /* Slightly shrink the link */
+}
+
+
+/* Projects Page */
+.projects {
+    padding: 100px 20px;
+    background-color: #1d1d1d;
+    text-align: center;
+    color: white;
+}
+
+.projects h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #b19cd9; /* Purple accent */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.projects-grid a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.projects-grid a:hover {
+    transform: scale(1.05);
+}
+
+.projects-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.projects-grid h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
