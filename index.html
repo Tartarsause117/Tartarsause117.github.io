@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      <h1>Joshua Hancox</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>My Portfolio</h1>
-            <p>Showcasing Projects That I Have Worked On.</p>
-            <a href="#" class="cta">View Projects</a>
+  <section id="hero">
+    <h2>Welcome</h2>
+    <p>A look into my projects and portfolio.</p>
+    <a href="cv.pdf" download class="btn">Download My CV</a>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project">
+        <img src="assets/Project1.png" alt="Project 1 Screenshot">
+        <div class="project-info">
+          <h3>Switch Automation Scripts</h3>
+          <p>A collection of scripts for my programming for network engineers class.
+             It aims to automatically configure switches with premade command lists.</p>
+          <a href="https://github.com/Tartarsause117/NetworkAutomationScripts/tree/main" class="btn">View on GitHub</a>
+          <a href="project1.html" class="btn">Learn More</a>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Joshua Hancox. All Rights Reserved.</p>
-    </footer>
+      </div>
+      <!-- Project 2 -->
+      <div class="project">
+        <img src="project2.png" alt="Project 2 Screenshot">
+        <div class="project-info">
+          <h3>Project Title 2</h3>
+          <p>Brief description of the project.</p>
+          <a href="#" class="btn">View on GitHub</a>
+          <a href="project2.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a cybersecurity student with expertise in python, web design and networking.
+    </p>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/Tartarsause117" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2024 Joshua Hancox</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
