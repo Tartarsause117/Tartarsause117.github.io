@@ -319,3 +319,129 @@ footer {
     background-position: 0 100%; /* Position the gradient at the bottom */
     padding-bottom: 5px; /* Adds spacing between the text and the gradient underline */
 }
+
+/* Contact Section */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto 80px auto;
+  padding: 0 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid transparent;
+  background-image: linear-gradient(45deg, #8000f5, #df00e9);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding-bottom: 5px;
+}
+
+.contact-section p {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Form Styling */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #1a1a1a;
+  border: 2px solid #7f00ff;
+  border-radius: 6px;
+  padding: 12px 15px;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #df00e9;
+  background: #2a2a2a;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+/* Submit Button */
+.contact-form button.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 0px;
+  border: none;
+  background: #7f00ff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.contact-form button.btn:hover {
+  background: linear-gradient(45deg, #8000f5, #df00e9);
+  color: #fff;
+}
+
+.contact-form button.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(45deg, #8000f5, #df00e9);
+  transition: width 0.3s ease;
+}
+
+.contact-form button.btn:hover::after {
+  width: 100%;
+}
+
+/* Contact Social Icons */
+.contact-social {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.contact-social a {
+  color: #7f00ff;
+  font-size: 2.5rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.contact-social a:hover {
+  color: #fff;
+}
+
+.contact-social a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(45deg, #8000f5, #df00e9);
+  transition: width 0.3s ease;
+}
+
+.contact-social a:hover::after {
+  width: 100%;
+}
